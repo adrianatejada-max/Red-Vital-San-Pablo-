@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Vital San Pablo | Liderazgo, Medicina y Comunidad</title>
+    <style>
+        :root {
+            --primary-blue: #3a86ff;
+            --soft-blue: #f0f7ff;
+            --card-blue: #dbebff;
+            --dark-blue: #1d3557;
+            --accent-teal: #48cae4;
+            --bg-light: #f8fbfe;
+            --text-dark: #2b2d42;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--dark-blue), var(--primary-blue));
+            color: var(--white);
+            padding: 2.5rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: var(--white);
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 1rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: var(--dark-blue);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--primary-blue);
+        }
+
+        .container {
+            max-width: 1050px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        section, aside {
+            background: var(--white);
+            padding: 1.8rem;
+            border-radius: 12px;
+            border-top: 5px solid var(--primary-blue);
+            box-shadow: 0 4px 12px rgba(58, 134, 255, 0.08);
+        }
+
+        h2 {
+            color: var(--dark-blue);
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .card {
+            background-color: var(--soft-blue);
+            padding: 1.2rem;
+            border-radius: 10px;
+            margin-top: 0.8rem;
+            border-left: 4px solid var(--accent-teal);
+        }
+
+        .card-title {
+            font-weight: 700;
+            color: var(--dark-blue);
+            font-size: 1.1rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .btn {
+            display: inline-block;
+            width: 100%;
+            background-color: var(--primary-blue);
+            color: var(--white);
+            padding: 0.8rem;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 0.8rem;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--dark-blue);
+        }
+
+        form input, form textarea, form select {
+            width: 100%;
+            padding: 0.7rem;
+            margin: 0.4rem 0 0.8rem 0;
+            border: 1px solid #c8e1ff;
+            border-radius: 6px;
+            background-color: #fafdfe;
+        }
+
+        .tip-item {
+            border-bottom: 1px solid #eef2f7;
+            padding-bottom: 0.8rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .tip-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: var(--dark-blue);
+            color: var(--white);
+            font-size: 0.9rem;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Red Vital San Pablo</h1>
+        <p>Liderazgo, Medicina y Acción Comunitaria | Universidad Católica San Pablo</p>
+    </header>
+
+    <nav>
+        <a href="#presentacion">1. Presentación</a>
+        <a href="#fechas">2. Fechas de Actividades</a>
+        <a href="#inscripcion">3. Inscribirse</a>
+        <a href="#cuidados">4. Columna de Cuidados</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- COLUMNA PRINCIPAL (SECCIONES 1, 2 Y 3) -->
+        <div class="main-content">
+
+            <!-- SECCIÓN 1: PRESENTACIÓN DE EQUIPO Y PROYECTO -->
+            <section id="presentacion">
+                <h2>🩺 1. Presentación de Nuestro Equipo y Proyecto</h2>
+                <p>Somos el grupo del curso de <strong>Liderazgo de la Universidad Católica San Pablo</strong>, integrado por estudiantes de la carrera de <strong>Medicina Humana</strong>.</p>
+                <p>Nuestro proyecto nace de la vocación de servicio y el compromiso con la salud integral. Como futuros médicos, entendemos que cuidar a la comunidad abarca desde la nutrición básica y la higiene hasta la prevención de enfermedades y la salud mental. Articulamos el liderazgo con el trabajo de campo para llevar ayuda directa, digna y constante a zonas vulnerables y grupos prioritarios.</p>
+            </section>
+
+            <!-- SECCIÓN 2: CALENDARIO Y FECHAS DE ACTIVIDADES -->
+            <section id="fechas">
+                <h2>🗓️ 2. Fechas de Actividades Comunitaria</h2>
+                <p>Buscamos consolidar un proyecto sostenible en el tiempo realizando intervenciones de impacto <strong>al menos una vez al mes</strong>.</p>
+                
+                <div class="card">
+                    <div class="card-title">✅ Próxima Jornada: Visita y Acompañamiento en Asilo</div>
+                    <p><strong>Fecha:</strong> Sábado 17</p>
+                    <p><strong>Lugar de Encuentro:</strong> Campus UCSP (Punto de salida)</p>
+                    <p><strong>Actividades:</strong> Acompañamiento afectivo, apoyo en higiene/salud integral, dinámicas de estimulación cognitiva y talleres con adultos mayores.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">📌 Jornada Anterior: Preparación de Arroz Chaufa en Zona Vulnerable</div>
+                    <p><strong>Impacto:</strong> Recolección de insumos, elaboración con estándares sanitarios de cocina y distribución de 50 porciones de comida completa a familias del sector.</p>
+                </div>
+            </section>
+
+            <!-- SECCIÓN 3: CÓMO INSCRIBIRSE A LAS ACTIVIDADES (VOLUNTARIADO Y DONACIONES) -->
+            <section id="inscripcion">
+                <h2>✍️ 3. ¿Cómo Inscribirse y Participar?</h2>
+                <p>Cualquier estudiante o persona comprometida con el servicio social puede sumarse a nuestras jornadas o apoyar con la donación de insumos.</p>
+                
+                <form>
+                    <label><strong>Tipo de participación:</strong></label>
+                    <select required>
+                        <option value="">Selecciona una opción...</option>
+                        <option value="voluntario">Quiero ser Voluntario (Asistir a la jornada del Sábado 17)</option>
+                        <option value="donante">Quiero donar insumos (Alimentos, kits de aseo, etc.)</option>
+                    </select>
+
+                    <label><strong>Nombre completo:</strong></label>
+                    <input type="text" placeholder="Ej. Ana María Torres" required>
+
+                    <label><strong>Contacto (WhatsApp / Correo):</strong></label>
+                    <input type="text" placeholder="Ej. 987 654 321 o usuario@correo.com" required>
+
+                    <label><strong>Mensaje opcional:</strong></label>
+                    <textarea rows="3" placeholder="Indica si dispones de movilidad o qué insumos deseas aportar..."></textarea>
+
+                    <button type="button" class="btn">Enviar Inscripción / Consulta</button>
+                </form>
+            </section>
+
+        </div>
+
+        <!-- COLUMNA LATERAL (SECCIÓN 4: INFORMACIÓN Y CUIDADOS DE SALUD) -->
+        <div class="sidebar">
+
+            <!-- SECCIÓN 4: COLUMNA DE CUIDADOS Y SALUD PÚBLICA -->
+            <aside id="cuidados">
+                <h2>💡 4. Columna de Cuidados y Salud</h2>
+                <p style="font-size: 0.9rem; margin-bottom: 1rem;">Recomendaciones preparadas por nuestro equipo de estudiantes de Medicina:</p>
+
+                <div class="tip-item">
+                    <strong style="color: var(--primary-blue);">🧼 Inocuidad de Alimentos</strong>
+                    <p style="font-size: 0.88rem;">Lavado constante de manos antes de preparar alimentos y separación de tabla de picar para carnes crudas y verduras.</p>
+                </div>
+
+                <div class="tip-item">
+                    <strong style="color: var(--primary-blue);">👵 Cuidado del Adulto Mayor</strong>
+                    <p style="font-size: 0.88rem;">Mantener hidratación constante, favorecer ejercicios de memoria diarios y asegurar una alimentación balanceada baja en sodio.</p>
+                </div>
+
+                <div class="tip-item">
+                    <strong style="color: var(--primary-blue);">🥗 Nutrición en Acompañamiento</strong>
+                    <p style="font-size: 0.88rem;">Combinar carbohidratos con proteínas y verduras frescas garantiza una energía duradera en jornadas de trabajo o estudio.</p>
+                </div>
+            </aside>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© Red Vital San Pablo - Proyecto de Liderazgo en Medicina Humana | Universidad Católica San Pablo</p>
+    </footer>
+
+</body>
+</html>
